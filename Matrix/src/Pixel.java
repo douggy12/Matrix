@@ -4,12 +4,17 @@ public class Pixel {
 	private int taille;
 	
 	public Pixel(){
-		bool = (int)Math.random();
-		taille = (int)Math.random()*10-1;
+		bool = (int)(Math.random()*2);
+		taille = (int)(Math.random()*10);
 	}
 
 	public int getTaille() {
 		return taille;
+	}
+	
+
+	public int getBool() {
+		return bool;
 	}
 
 	@Override
