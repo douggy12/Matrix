@@ -23,6 +23,6 @@ public class Pixel {
 		else return (" ");
 	}
 	
-	
+	 
 
 }
