@@ -4,7 +4,8 @@ import java.util.TimerTask;
 public class Main {
 
 	public static void main(String[] args) {
-		Pixel[] tableau = new Pixel[10];
+		int matrix=100;
+		Pixel[] tableau = new Pixel[matrix];
 		Timer timer = new Timer();
 
 
@@ -12,17 +13,18 @@ public class Main {
 
 			@Override
 			public void run() {
-				for(int i=0; i<10; i++){
+				for(int i=0; i<matrix; i++){
 					tableau[i]=new Pixel();
 				}
-				for(int i = 0; i < 10; i++){
+				for(int i = 0; i < matrix; i++){
 					if (tableau[i].getTaille()<0){tableau[i]=new Pixel(); System.out.print(tableau[i].toString());}
 					else System.out.print(tableau[i].toString());
 				}
+				System.out.print("\n");
 			}
 
-
-		}, 0,500);
+			
+		}, 0,100);
 
 	}
 }
