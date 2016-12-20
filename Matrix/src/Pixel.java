@@ -5,7 +5,7 @@ public class Pixel {
 	
 	public Pixel(){
 		bool = (int)(Math.random()*2);
-		taille = (int)(Math.random()*10);
+		taille = (int)(Math.random()*10)+10;
 	}
 
 	public int getTaille() {
@@ -20,7 +20,7 @@ public class Pixel {
 	@Override
 	public String toString() {
 		taille--;
-		if (bool==1)return ((int)(Math.random()*10)+"");
+		if (bool==1)return (((int)(Math.random()*6)+4)+"");
 		else return (" "); 
 	}
 	
