@@ -20,7 +20,7 @@ public class Pixel {
 	@Override
 	public String toString() {
 		if (bool==1)return ((int)(Math.random()*10)+"");
-		else return (" ");
+		else return (" "); 
 	}
 	
 	 
